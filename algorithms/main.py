@@ -36,7 +36,7 @@ def benchmark(function, name: str, iters: int = 100):
 
     table_row = [name, answer_formatted, final_summary_dist, mean_time]
 
-    with open(f'..//answers//{function.name}_{name}.sol', 'a+') as file:
+    with open(f'..//{function.name} answers//{name}.sol', 'a+') as file:
         print(' '.join(list(map(str, final_ans))), file=file)
 
     return table_row
